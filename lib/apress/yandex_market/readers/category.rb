@@ -44,12 +44,12 @@ module Apress
         # options - Hash, параметры ридера
         #   :region_id  - идентификатор региона (необязательный)
         #   :token      - токен для доступа к API Яндекс.Маркета
-        #   :categories - список категорий для загрузки моделей Яндекс.Маркета
+        #   :categories - список категорий для загрузки моделей Яндекс.Маркета (разделитель - ';')
         #
         # Returns an instance of Readers::Category
         def initialize(options)
           super
-          @category_names = options.fetch(:categories).split(';').map(&:squish)
+          @categories = options.fetch(:categories).split(';').map(&:squish)
         end
 
         # Public: читаем категории из API и для каждой выполняем блок
@@ -58,37 +58,53 @@ module Apress
         def each_row
           root_categories.each do |root_category|
             yield root_category
-            page = 1
 
-            loop do
-              sleep(SLEEP_TIME)
-              categories =
-                with_rescue_api_errors do
-                  client.
-                    get(
-                      "categories/#{root_category.fetch(:id)}/children",
-                      geo_id: @region_id,
-                      sort: 'BY_NAME'.freeze,
-                      count: PAGE_SIZE,
-                      page: page
-                    ).
-                    fetch(:categories)
-                end
+            categories = get_children_categories(root_category[:id])
 
-              categories.each { |category| yield category }
-              break if categories.count < PAGE_SIZE
-              page += 1
-            end
+            categories.each { |category| yield category }
           end
         end
 
         private
 
+        def get_children_categories(parent_id)
+          page = 1
+          result = []
+
+          loop do
+            sleep(SLEEP_TIME)
+            categories =
+              with_rescue_api_errors do
+                client.
+                  get(
+                    "categories/#{parent_id}/children",
+                    geo_id: @region_id,
+                    sort: 'BY_NAME'.freeze,
+                    count: PAGE_SIZE,
+                    page: page
+                  ).
+                  fetch(:categories)
+              end
+
+            page += 1
+            result += categories
+            break if categories.empty? || categories.count < PAGE_SIZE
+          end
+
+          result.dup.each do |category|
+            next if category[:childCount].zero?
+
+            result += get_children_categories(category[:id])
+          end
+
+          result
+        end
+
         def root_categories
           client.
             get('categories', geo_id: @region_id).
             fetch(:categories).
-            select { |category| @category_names.include?(category.fetch(:name)) }
+            select { |category| @categories.include?(category.fetch(:name)) }
         end
       end
     end

@@ -69,6 +69,7 @@ module Apress
         # options - Hash, параметры ридера
         #   :region_id  - идентификатор региона (необязательный)
         #   :token      - токен для доступа к API Яндекс.Маркета
+        #   :categories - список категорий для загрузки моделей Яндекс.Маркета
         #
         # Returns an instance of Readers::ModelByCategory
         def initialize(options)
@@ -83,28 +84,18 @@ module Apress
           presenter = Presenters::Model.new
 
           category_reader.each_row do |category|
+            processed_model_ids = []
+            models = []
             page = 1
 
+            # Читаем модели с сортировкой по убыванию
             loop do
-              sleep(SLEEP_TIME)
-              models =
-                with_rescue_api_errors do
-                  client.
-                    get(
-                      "categories/#{category.fetch(:id)}/search",
-                      geo_id: @region_id,
-                      result_type: 'MODELS'.freeze,
-                      sort: 'DATE'.freeze,
-                      how: 'DESC'.freeze,
-                      fields: FIELDS,
-                      count: PAGE_SIZE,
-                      page: page
-                    ).
-                    fetch(:items)
-                end
+              models = get_models(category.fetch(:id), page)
 
               models.each do |model|
+                processed_model_ids << model.fetch(:id)
                 next if category.fetch(:id) == model.fetch(:category).fetch(:id)
+
                 yield presenter.expose(model)
               end
 
@@ -112,6 +103,48 @@ module Apress
 
               page += 1
             end
+
+            next unless models.empty?
+
+            page = 1
+
+            # Если наткнулись на PageError - читаем модели с сортировкой по возрастанию.
+            # Из-за ограничений пагинации, это может позволить загрузить больше моделей
+            loop do
+              models = get_models(category.fetch(:id), page, 'ASC')
+
+              models.each do |model|
+                next if category.fetch(:id) == model.fetch(:category).fetch(:id)
+                next if processed_model_ids.include? model.fetch(:id)
+
+                yield presenter.expose(model)
+              end
+
+              break if models.size < PAGE_SIZE
+
+              page += 1
+            end
+          end
+        end
+
+        private
+
+        def get_models(category_id, page, sort_direction = 'DESC')
+          sleep(SLEEP_TIME)
+
+          with_rescue_api_errors do
+            client.
+              get(
+                "categories/#{category_id}/search",
+                geo_id: @region_id,
+                result_type: 'MODELS'.freeze,
+                sort: 'DATE'.freeze,
+                how: sort_direction,
+                fields: FIELDS,
+                count: PAGE_SIZE,
+                page: page
+              ).
+              fetch(:items)
           end
         end
       end

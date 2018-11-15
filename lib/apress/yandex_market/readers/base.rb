@@ -5,13 +5,13 @@ module Apress
     module Readers
       # Базовый класс ридеров
       class Base
-        DEFAULT_REGION_ID = 225
-        PAGE_SIZE = 30
+        DEFAULT_REGION_ID = 225 # Россия
+        PAGE_SIZE = 30 # максимум сущностей на одной странице в API Яндекс.Маркета
 
-        SLEEP_TIME = 0.5 # no more than 2 rpm
+        SLEEP_TIME = 0.5 # no more than 2 rps
 
         RETRY_ATTEMPTS = 5
-        RETRY_CODES = [500, 502, 503, 504].freeze
+        RETRY_CODES = [401, 403, 500, 502, 503, 504].freeze
 
         attr_reader :client
 
