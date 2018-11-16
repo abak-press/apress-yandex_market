@@ -124,7 +124,7 @@ module Apress
         def get_models(category_id, page, sort_direction)
           sleep(SLEEP_TIME)
 
-          with_rescue_api_errors do
+          with_rescue_temporary_errors do
             client.
               get(
                 "categories/#{category_id}/search",

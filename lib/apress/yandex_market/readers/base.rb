@@ -36,7 +36,7 @@ module Apress
 
         private
 
-        def with_rescue_api_errors(attempts = RETRY_ATTEMPTS)
+        def with_rescue_temporary_errors(attempts = RETRY_ATTEMPTS)
           yield
         rescue Api::Error, Timeout::Error => err
           raise if err.is_a?(Api::Error) && !RETRY_CODES.include?(err.code)

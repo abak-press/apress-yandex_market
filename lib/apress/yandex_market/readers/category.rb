@@ -75,7 +75,7 @@ module Apress
             sleep(SLEEP_TIME)
             categories =
               begin
-                with_rescue_api_errors do
+                with_rescue_temporary_errors do
                   client.
                     get(
                       "categories/#{parent_id}/children",
