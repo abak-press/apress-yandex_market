@@ -10,8 +10,8 @@ module Apress
 
         SLEEP_TIME = 0.5 # no more than 2 rps
 
-        RETRY_ATTEMPTS = 5
         RETRY_ATTEMPTS_SLEEP_TIME = [60, 60, 30, 15, 1].freeze
+        RETRY_ATTEMPTS = RETRY_ATTEMPTS_SLEEP_TIME.size
         RETRY_CODES = [401, 403, 404, 500, 502, 503, 504].freeze
 
         attr_reader :client
@@ -38,8 +38,6 @@ module Apress
 
         def with_rescue_api_errors(attempts = RETRY_ATTEMPTS)
           yield
-        rescue Api::PageError
-          []
         rescue Api::Error, Timeout::Error => err
           raise if err.is_a?(Api::Error) && !RETRY_CODES.include?(err.code)
 

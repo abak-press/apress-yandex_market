@@ -21,8 +21,9 @@ describe Apress::YandexMarket::Readers::ModelByCategory do
       end
     end
 
-    it 'reads specified categories and their subcategories' do
-      expect(rows).to have(1958).items
+    it 'reads models of specified categories and their subcategories' do
+      expect(rows).to have(840).items
+      expect(rows.uniq).to have(840).items
     end
   end
 end

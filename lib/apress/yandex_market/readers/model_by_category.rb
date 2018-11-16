@@ -10,7 +10,8 @@ module Apress
       # Examples
       #
       #   reader = Apress::YandexMarket::Readers::ModelByCategory.new(region_id: 225,
-      #                                                               token: 'qwerty')
+      #                                                               token: 'qwerty',
+      #                                                               categories: 'Авто; Дом и дача')
       #   # => #<Apress::YandexMarket::Readers::ModelByCategory ...>
       #
       #   reader.each_row |model|
@@ -84,52 +85,43 @@ module Apress
           presenter = Presenters::Model.new
 
           category_reader.each_row do |category|
-            processed_model_ids = []
-            models = []
-            page = 1
+            models = Set.new
 
-            # Читаем модели с сортировкой по убыванию
-            loop do
-              models = get_models(category.fetch(:id), page)
-
-              models.each do |model|
-                processed_model_ids << model.fetch(:id)
-                next if category.fetch(:id) == model.fetch(:category).fetch(:id)
-
-                yield presenter.expose(model)
+            begin
+              process_models(models, category.fetch(:id), 'DESC')
+            rescue Api::PageError
+              begin
+                process_models(models, category.fetch(:id), 'ASC')
+              rescue Api::PageError
               end
-
-              break if models.size < PAGE_SIZE
-
-              page += 1
             end
 
-            next unless models.empty?
-
-            page = 1
-
-            # Если наткнулись на PageError - читаем модели с сортировкой по возрастанию.
-            # Из-за ограничений пагинации, это может позволить загрузить больше моделей
-            loop do
-              models = get_models(category.fetch(:id), page, 'ASC')
-
-              models.each do |model|
-                next if category.fetch(:id) == model.fetch(:category).fetch(:id)
-                next if processed_model_ids.include? model.fetch(:id)
-
-                yield presenter.expose(model)
-              end
-
-              break if models.size < PAGE_SIZE
-
-              page += 1
-            end
+            models.each { |model| yield presenter.expose(model) }
           end
         end
 
         private
 
-        def get_models(category_id, page, sort_direction = 'DESC')
+        def process_models(processed_models, category_id, sort_direction)
+          page = 1
+
+          loop do
+            models = get_models(category_id, page, sort_direction)
+
+            models.each do |model|
+              next if category_id != model.fetch(:category).fetch(:id)
+              return if processed_models.include? model
+
+              processed_models << model
+            end
+
+            break if models.size < PAGE_SIZE
+
+            page += 1
+          end
+        end
+
+        def get_models(category_id, page, sort_direction)
           sleep(SLEEP_TIME)
 
           with_rescue_api_errors do

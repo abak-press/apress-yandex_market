@@ -74,16 +74,20 @@ module Apress
           loop do
             sleep(SLEEP_TIME)
             categories =
-              with_rescue_api_errors do
-                client.
-                  get(
-                    "categories/#{parent_id}/children",
-                    geo_id: @region_id,
-                    sort: 'BY_NAME'.freeze,
-                    count: PAGE_SIZE,
-                    page: page
-                  ).
-                  fetch(:categories)
+              begin
+                with_rescue_api_errors do
+                  client.
+                    get(
+                      "categories/#{parent_id}/children",
+                      geo_id: @region_id,
+                      sort: 'BY_NAME'.freeze,
+                      count: PAGE_SIZE,
+                      page: page
+                    ).
+                    fetch(:categories)
+                end
+              rescue Api::PageError
+                []
               end
 
             page += 1
