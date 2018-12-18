@@ -1,0 +1,2041 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories?geo_id=225
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:05:51 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x111412895a78
+      X-Market-Req-Id:
+      - 1542204351301/3e28556c737a0b5d6dbc93ce9240004b
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:05:52 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:05:52 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971869'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=TCsSA+XUrIsC55ifILIrT1egIkq/olVv+KxRpDyWMgsL3CoIteGrF9gR9dJ2k0tmYUuLhPYjvJz7D99oimos/4kS78c=;
+        Expires=Sat, 11-Nov-2028 14:05:51 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK7+xPgFOAxr6Ag==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":10,"total":2},"id":"1542204351301/3e28556c737a0b5d6dbc93ce9240004b","time":"2018-11-14T17:05:51.305+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90402,"name":"Авто","fullName":"Товары
+        для авто- и мототехники","link":"https://market.yandex.ru/catalog--tovary-dlia-avto-i-mototekhniki/90402/list?hid=90402&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":12,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90509,"name":"Красота","fullName":"Товары
+        для красоты","link":"https://market.yandex.ru/catalog--tovary-dlia-krasoty/90509/list?hid=90509&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90666,"name":"Товары
+        для дома","fullName":"Товары для дома","link":"https://market.yandex.ru/catalog--tovary-dlia-doma/90666/list?hid=90666&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":9,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90719,"name":"Дача,
+        сад и огород","fullName":"Дача, сад и огород","link":"https://market.yandex.ru/catalog--dacha-sad-i-ogorod/90719/list?hid=90719&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":13,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90764,"name":"Детские
+        товары","fullName":"Детские товары","link":"https://market.yandex.ru/catalog--detskie-tovary/90764/list?hid=90764&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":6,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90801,"name":"Досуг
+        и развлечения","fullName":"Досуг и развлечения","link":"https://market.yandex.ru/catalog--dosug-i-razvlecheniia/90801/list?hid=90801&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":14,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90813,"name":"Товары
+        для животных","fullName":"Товары для животных","link":"https://market.yandex.ru/catalog--tovary-dlia-zhivotnykh/90813/list?hid=90813&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":29,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91009,"name":"Компьютерная
+        техника","fullName":"Компьютерная техника","link":"https://market.yandex.ru/catalog--kompiuternaia-tekhnika/91009/list?hid=91009&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":12,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91307,"name":"Продукты","fullName":"Продукты,
+        напитки","link":"https://market.yandex.ru/catalog--produkty-napitki/91307/list?hid=91307&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":14,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91512,"name":"Спорт
+        и отдых","fullName":"Товары для спорта и отдыха","link":"https://market.yandex.ru/catalog--tovary-dlia-sporta-i-otdykha/91512/list?hid=91512&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":17,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:05:14 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90402/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x111412897dba
+      X-Market-Req-Id:
+      - 1542204382118/7f31d194612b326ea8cc89f997e665a9
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:23 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:23 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971827'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=9DjXPInr1bke0DtxG38HmfL7V88lytaJVXP8slE8uerwXX+WuBiW5umZ5kTZO8s2zVybi1+tX3WKtHdUz0tqfu0axsc=;
+        Expires=Sat, 11-Nov-2028 14:06:22 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK96xPgFOAz3EAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":12,"total":1},"id":"1542204382118/7f31d194612b326ea8cc89f997e665a9","time":"2018-11-14T17:06:22.122+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":13199877,"name":"Автомобильные
+        инструменты","fullName":"Автомобильные инструменты","link":"https://market.yandex.ru/catalog--avtomobilnye-instrumenty/13199877/list?hid=13199877&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":4,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90428,"name":"Автохимия
+        и автокосметика","fullName":"Автохимия и автокосметика","link":"https://market.yandex.ru/catalog--avtokhimiia-i-avtokosmetika/90428/list?hid=90428&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":8,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90461,"name":"Аксессуары
+        и оборудование","fullName":"Аксессуары и оборудование для автомобиля","link":"https://market.yandex.ru/catalog--aksessuary-i-oborudovanie-dlia-avtomobilia/90461/list?hid=90461&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":10,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90403,"name":"Аудио-
+        и видеотехника","fullName":"Автомобильная аудио- и видеотехника","link":"https://market.yandex.ru/catalog--avtomobilnaia-audio-i-videotekhnika/90403/list?hid=90403&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":11,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90435,"name":"Запчасти","fullName":"Запчасти
+        для авто- и мототехники","link":"https://market.yandex.ru/catalog--zapchasti-dlia-avto-i-mototekhniki/90435/list?hid=90435&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":20,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90477,"name":"Масла
+        и технические жидкости","fullName":"Масла и технические жидкости для автомобилей","link":"https://market.yandex.ru/catalog--masla-i-tekhnicheskie-zhidkosti-dlia-avtomobilei/90477/list?hid=90477&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":7,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90497,"name":"Мототехника","fullName":"Мототехника","link":"https://market.yandex.ru/catalog--mototekhnika/90497/list?hid=90497&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":7,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90455,"name":"Противоугонные
+        устройства","fullName":"Автомобильные противоугонные устройства","link":"https://market.yandex.ru/catalog--avtomobilnye-protivougonnye-ustroistva/90455/list?hid=90455&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":6,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90506,"name":"Спецтехника","fullName":"Автомобильная
+        спецтехника","link":"https://market.yandex.ru/catalog--avtomobilnaia-spetstekhnika/90506/list?hid=90506&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":10613554,"name":"Транспорт","fullName":"Автомобильный
+        транспорт","link":"https://market.yandex.ru/catalog--avtomobilnyi-transport/10613554/list?hid=10613554&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":10613544,"name":"Шины
+        и диски","fullName":"Автомобильные шины и диски","link":"https://market.yandex.ru/catalog--avtomobilnye-shiny-i-diski/10613544/list?hid=10613544&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":6,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":10613523,"name":"Электроника","fullName":"Автомобильная
+        электроника","link":"https://market.yandex.ru/catalog--avtomobilnaia-elektronika/10613523/list?hid=10613523&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":9,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:05:45 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/13199877/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1263x11141260e3db
+      X-Market-Req-Id:
+      - 1542204382780/55d37ae4cde32ad9ec43399be6794894
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:23 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:23 GMT
+      Content-Language:
+      - en-US
+      Cache-Control:
+      - no-store
+      Set-Cookie:
+      - i=TA3jIzkc/RphIG3eTgo7QaJhsxPCsnGhcFWIbHhFBleQzW5nyNIG0bMqlJYfND3z8LS4dKiQo71tqv9M8RLitb9UoAE=;
+        Expires=Sat, 11-Nov-2028 14:06:22 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK95cegE8FdWPAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"ERROR","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"id":"1542204382780/55d37ae4cde32ad9ec43399be6794894","time":"2018-11-14T17:06:22.782+03:00","marketUrl":"https://market.yandex.ru?clid=2326601&distr_type=7"},"errors":[{"message":"Rate
+        limit exceeded"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:05:45 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/13199877/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:52 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x111412899f37
+      X-Market-Req-Id:
+      - 1542204412934/8fd4626e4e1b4e5b04bb03cbff27e3e3
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:53 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:53 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971783'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=+2JsgWhLJGamgnBTocL9oNS8YuH/Sq31Ra62ncjOUDss62UbYH07JCZ7o8fo2KN8uLqgyC2xCaoM5uhjHLAWfhJZf24=;
+        Expires=Sat, 11-Nov-2028 14:06:52 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK/yxPgFOA17GAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":4,"total":1},"id":"1542204412934/8fd4626e4e1b4e5b04bb03cbff27e3e3","time":"2018-11-14T17:06:52.938+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90463,"name":"Автомобильные
+        компрессоры","fullName":"Автомобильные компрессоры","link":"https://market.yandex.ru/catalog--avtomobilnye-kompressory/90463/list?hid=90463&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13199892,"name":"Домкраты
+        и подставки","fullName":"Автомобильные домкраты, подставки и аксессуары","link":"https://market.yandex.ru/catalog--avtomobilnye-domkraty-podstavki-i-aksessuary/13199892/list?hid=13199892&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14734226,"name":"Насосы
+        для подкачки шин","fullName":"Насосы для подкачки шин","link":"https://market.yandex.ru/catalog--nasosy-dlia-podkachki-shin/14734226/list?hid=14734226&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90508,"name":"Прочие
+        инструменты","fullName":"Прочие инструменты для ремонта автомобиля","link":"https://market.yandex.ru/catalog--prochie-instrumenty-dlia-remonta-avtomobilia/90508/list?hid=90508&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:16 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90428/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:53 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1745x111412667ae4
+      X-Market-Req-Id:
+      - 1542204413584/3e2f5890359d1c1201af32939acab01d
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:54 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:54 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971781'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=CDq4Hc6+ML1QHcdOIipMX8NjdJMMqFgYc8Do0Kcv5pBbHZRFxqLMJcLz1ZRNcLoB+6gXVPZVs1DpXf4M/Wpu37dIYE4=;
+        Expires=Sat, 11-Nov-2028 14:06:53 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK/2l8AE1E0wKAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":8,"total":1},"id":"1542204413584/3e2f5890359d1c1201af32939acab01d","time":"2018-11-14T17:06:53.588+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90475,"name":"Ароматизаторы
+        салона","fullName":"Ароматизаторы салона автомобиля","link":"https://market.yandex.ru/catalog--aromatizatory-salona-avtomobilia/90475/list?hid=90475&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369611,"name":"Для
+        малярных работ","fullName":"Для автомалярных работ","link":"https://market.yandex.ru/catalog--dlia-avtomaliarnykh-rabot/14369611/list?hid=14369611&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":4,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369537,"name":"Клеи,
+        герметики и фиксаторы","fullName":"Клеи, герметики и фиксаторы для ремонта
+        автомобилей","link":"https://market.yandex.ru/catalog--klei-germetiki-i-fiksatory-dlia-remonta-avtomobilei/14369537/list?hid=14369537&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369608,"name":"Технические
+        очистители","fullName":"Технические очистители для автомобилей","link":"https://market.yandex.ru/catalog--tekhnicheskie-ochistiteli-dlia-avtomobilei/14369608/list?hid=14369608&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14368663,"name":"Уход
+        за кузовом","fullName":"Уход за кузовом автомобиля","link":"https://market.yandex.ru/catalog--ukhod-za-kuzovom-avtomobilia/14368663/list?hid=14368663&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":8,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369113,"name":"Уход
+        за салоном","fullName":"Уход за салоном автомобиля","link":"https://market.yandex.ru/catalog--ukhod-za-salonom-avtomobilia/14369113/list?hid=14369113&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369211,"name":"Уход
+        за стеклами и фарами","fullName":"Уход за стеклами и фарами автомобилей","link":"https://market.yandex.ru/catalog--ukhod-za-steklami-i-farami-avtomobilei/14369211/list?hid=14369211&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":5,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369377,"name":"Уход
+        за шинами и дисками","fullName":"Уход за шинами и дисками автомобилей","link":"https://market.yandex.ru/catalog--ukhod-za-shinami-i-diskami-avtomobilei/14369377/list?hid=14369377&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":2,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:16 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/14369611/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:54 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9668x1114128441fe
+      X-Market-Req-Id:
+      - 1542204414236/c249681cb487c03c46160097704945df
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:55 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:55 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971779'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=eHPvPEVb/pegmpcAI9bRKSvLyRHw6PyKWFw8jlA0GLxE62EVirEWQmLD7pqtmKlse4j0/7sXVxtD4IhLnNLNdv05woA=;
+        Expires=Sat, 11-Nov-2028 14:06:54 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK/4rkAFUBeecAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":4,"total":1},"id":"1542204414236/c249681cb487c03c46160097704945df","time":"2018-11-14T17:06:54.239+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90434,"name":"Грунты","fullName":"Грунты
+        для кузовного ремонта автомобилей","link":"https://market.yandex.ru/catalog--grunty-dlia-kuzovnogo-remonta-avtomobilei/90434/list?hid=90434&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90432,"name":"Краски
+        и лаки","fullName":"Краски и лаки для кузовного ремонта автомобилей","link":"https://market.yandex.ru/catalog--kraski-i-laki-dlia-kuzovnogo-remonta-avtomobilei/90432/list?hid=90432&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369617,"name":"Краски-кисточки","fullName":"Краски-кисточки
+        для кузовного ремонта автомобилей","link":"https://market.yandex.ru/catalog--kraski-kistochki-dlia-kuzovnogo-remonta-avtomobilei/14369617/list?hid=14369617&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90433,"name":"Шпатлевки","fullName":"Шпатлевки
+        для кузовного ремонта автомобилей","link":"https://market.yandex.ru/catalog--shpatlevki-dlia-kuzovnogo-remonta-avtomobilei/90433/list?hid=90433&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:17 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/14369537/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:54 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1745x111412667c33
+      X-Market-Req-Id:
+      - 1542204414885/cd02abccdc1db2759680b3dcf20a4484
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:55 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:55 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971777'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=UCl1vdk2LaQjVdgizLe6Tzq1cGHoUj2BfYcJkG9deGeGb2M3gQh0mkWkZ2UqA2HdXhOifgMWlaGAxlfb2oBeWrJMgOs=;
+        Expires=Sat, 11-Nov-2028 14:06:54 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK/6l8AE1E01eAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":3,"total":1},"id":"1542204414885/cd02abccdc1db2759680b3dcf20a4484","time":"2018-11-14T17:06:54.888+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90483,"name":"Герметики","fullName":"Герметики
+        для ремонта автомобилей","link":"https://market.yandex.ru/catalog--germetiki-dlia-remonta-avtomobilei/90483/list?hid=90483&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369538,"name":"Клеи
+        и наборы для вклейки автостекол","fullName":"Клеи и наборы для вклейки автостекол","link":"https://market.yandex.ru/catalog--klei-i-nabory-dlia-vkleiki-avtostekol/14369538/list?hid=14369538&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369567,"name":"Фиксаторы","fullName":"Фиксаторы
+        резьбовых соединений и подшипников","link":"https://market.yandex.ru/catalog--fiksatory-rezbovykh-soedinenii-i-podshipnikov/14369567/list?hid=14369567&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:18 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/14368663/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:55 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x11141289a1e5
+      X-Market-Req-Id:
+      - 1542204415542/a45959b6b34671c79b44a682c57fa967
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:56 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:56 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971775'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=tixYhDiMX9/+wmZAwavrlBji23MzeZLTiktE2CPM6wM3MqXLIh22OA4GYNvLFckeOIfsuYCy5m+phwTBeTxOGUFRGJU=;
+        Expires=Sat, 11-Nov-2028 14:06:55 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsK/+xPgFOA2FyAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":8,"total":1},"id":"1542204415542/a45959b6b34671c79b44a682c57fa967","time":"2018-11-14T17:06:55.566+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90430,"name":"Автошампуни
+        и пены","fullName":"Автошампуни и пены для мойки автомобилей","link":"https://market.yandex.ru/catalog--avtoshampuni-i-peny-dlia-moiki-avtomobilei/90430/list?hid=90430&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14368693,"name":"Антигравий","fullName":"Антигравий
+        для кузова автомобиля","link":"https://market.yandex.ru/catalog--antigravii-dlia-kuzova-avtomobilia/14368693/list?hid=14368693&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90488,"name":"Антикоры","fullName":"Автомобильные
+        антикоры","link":"https://market.yandex.ru/catalog--avtomobilnye-antikory/90488/list?hid=90488&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14368689,"name":"Воски","fullName":"Воски
+        для автомобилей","link":"https://market.yandex.ru/catalog--voski-dlia-avtomobilei/14368689/list?hid=14368689&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90431,"name":"Очистители
+        кузова","fullName":"Очистители кузова автомобилей","link":"https://market.yandex.ru/catalog--ochistiteli-kuzova-avtomobilei/90431/list?hid=90431&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90429,"name":"Полироли
+        и пасты для кузова","fullName":"Полироли и пасты для автомобилей","link":"https://market.yandex.ru/catalog--poliroli-i-pasty-dlia-avtomobilei/90429/list?hid=90429&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90484,"name":"Преобразователи
+        ржавчины","fullName":"Преобразователи ржавчины для автомобилей","link":"https://market.yandex.ru/catalog--preobrazovateli-rzhavchiny-dlia-avtomobilei/90484/list?hid=90484&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14368679,"name":"Принадлежности
+        для мойки","fullName":"Принадлежности для мойки автомобилей","link":"https://market.yandex.ru/catalog--prinadlezhnosti-dlia-moiki-avtomobilei/14368679/list?hid=14368679&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:18 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/14369211/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:56 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x11141289a2ae
+      X-Market-Req-Id:
+      - 1542204416213/716bf9b8ddf59d00e8a6200c98724e96
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:57 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:57 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971773'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=i1yrd7hQ3gfRn35UdQ7LRU3LdRB26Tx+QVCEnAW30qojSMC+JV8G0WkLBGYzTnuowf9srSinkC2AD58GIpGlkLNgK5I=;
+        Expires=Sat, 11-Nov-2028 14:06:56 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLACxPgFOA2IqAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":5,"total":1},"id":"1542204416213/716bf9b8ddf59d00e8a6200c98724e96","time":"2018-11-14T17:06:56.218+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":14369214,"name":"Антидождь","fullName":"Антидождь
+        для автостекол","link":"https://market.yandex.ru/catalog--antidozhd-dlia-avtostekol/14369214/list?hid=14369214&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369215,"name":"Антизапотеватели","fullName":"Антизапотеватели
+        для стекол автомобилей","link":"https://market.yandex.ru/catalog--antizapotevateli-dlia-stekol-avtomobilei/14369215/list?hid=14369215&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14201356,"name":"Жидкость
+        для стеклоомывателя","fullName":"Жидкость для стеклоомывателя","link":"https://market.yandex.ru/catalog--zhidkost-dlia-stekloomyvatelia/14201356/list?hid=14201356&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369216,"name":"Очистители
+        для автостекол","fullName":"Очистители для автостекол","link":"https://market.yandex.ru/catalog--ochistiteli-dlia-avtostekol/14369216/list?hid=14369216&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369311,"name":"Полироли
+        для фар и автостекол","fullName":"Полироли для фар и автостекол","link":"https://market.yandex.ru/catalog--poliroli-dlia-far-i-avtostekol/14369311/list?hid=14369311&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:19 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/14369377/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:56 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9672x11141263b0bd
+      X-Market-Req-Id:
+      - 1542204416870/8a97a8009f64c002a5b171ef64c1cc5a
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:57 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:57 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971771'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=2R9xmr2D4uJsUnoL3BTmF5Sax5kAruwLFo0szy3KeLgIvXck8PstbFcRT5i0VQcJn3faiSadasovz/ErQ3N/qN0UrfM=;
+        Expires=Sat, 11-Nov-2028 14:06:56 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLACRlgE5FLL9Ag==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":2,"total":1},"id":"1542204416870/8a97a8009f64c002a5b171ef64c1cc5a","time":"2018-11-14T17:06:56.873+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":14369455,"name":"Наборы
+        и герметики для ремонта шин","fullName":"Наборы и герметики для ремонта шин
+        автомобилей","link":"https://market.yandex.ru/catalog--nabory-i-germetiki-dlia-remonta-shin-avtomobilei/14369455/list?hid=14369455&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14369423,"name":"Очистители
+        и полироли для шин и дисков","fullName":"Очистители и полироли для шин и дисков
+        автомобилей","link":"https://market.yandex.ru/catalog--ochistiteli-i-poliroli-dlia-shin-i-diskov-avtomobilei/14369423/list?hid=14369423&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:20 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90461/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:57 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x11141289a42c
+      X-Market-Req-Id:
+      - 1542204417530/9d21848a00b26300aacb89500bbbc22b
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:58 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:58 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971769'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=r+YYQAkzg2hVVrXJWMSxkdMKPRxP2rZMaHwuJPF2RVea6H4gexEhhPvRnms+ZAVyMJvSZYbXMhT8ig6OnfUO9dVRxkI=;
+        Expires=Sat, 11-Nov-2028 14:06:57 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAGxPgFOA2OvAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":10,"total":1},"id":"1542204417530/9d21848a00b26300aacb89500bbbc22b","time":"2018-11-14T17:06:57.533+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":454910,"name":"Автомобильные
+        холодильники","fullName":"Автомобильные холодильники","link":"https://market.yandex.ru/catalog--avtomobilnye-kholodilniki/454910/list?hid=454910&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208016,"name":"Багажные
+        системы","fullName":"Багажные системы для автомобилей","link":"https://market.yandex.ru/catalog--bagazhnye-sistemy-dlia-avtomobilei/13208016/list?hid=13208016&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":4,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4953538,"name":"Защита
+        и внешний тюнинг","fullName":"Защита и внешний тюнинг для автомобиля","link":"https://market.yandex.ru/catalog--zashchita-i-vneshnii-tiuning-dlia-avtomobilia/4953538/list?hid=4953538&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":15,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12327203,"name":"Инвентарь
+        для ухода","fullName":"Инвентарь для ухода за автомобилем","link":"https://market.yandex.ru/catalog--inventar-dlia-ukhoda-za-avtomobilem/12327203/list?hid=12327203&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13199937,"name":"Лебедки","fullName":"Автомобильные
+        лебедки","link":"https://market.yandex.ru/catalog--avtomobilnye-lebedki/13199937/list?hid=13199937&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12327172,"name":"Необходимый
+        набор автомобилиста","fullName":"Необходимый набор автомобилиста","link":"https://market.yandex.ru/catalog--neobkhodimyi-nabor-avtomobilista/12327172/list?hid=12327172&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":4,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13207999,"name":"Обогреватели
+        двигателя и салона","fullName":"Обогреватели двигателя и салона автомобиля","link":"https://market.yandex.ru/catalog--obogrevateli-dvigatelia-i-salona-avtomobilia/13207999/list?hid=13207999&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12327158,"name":"Обустройство
+        салона","fullName":"Аксессуары для обустройства салона автомобиля","link":"https://market.yandex.ru/catalog--aksessuary-dlia-obustroistva-salona-avtomobilia/12327158/list?hid=12327158&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":7,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":10595701,"name":"Цепи
+        противоскольжения","fullName":"Цепи противоскольжения для автомобилей","link":"https://market.yandex.ru/catalog--tsepi-protivoskolzheniia-dlia-avtomobilei/10595701/list?hid=10595701&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90470,"name":"Щетки
+        стеклоочистителей","fullName":"Щетки стеклоочистителей","link":"https://market.yandex.ru/catalog--shchetki-stekloochistitelei/90470/list?hid=90470&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:20 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/13208016/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:58 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1264p111412795931
+      X-Market-Req-Id:
+      - 1542204418182/e683d8b05fb25feaf002e4737d192547
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:59 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:59 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971768'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=Of7gV3D7DI/pE/tENwX4JGd22u2ynCxtnOtHRaD8Or4d4E5KzmOgDKTNPU3yT6/z5MShO95D0j7d0zxSbrdIoMm5xyQ=;
+        Expires=Sat, 11-Nov-2028 14:06:58 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAifFvsLAKMmAFUCxPKAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":4,"total":1},"id":"1542204418182/e683d8b05fb25feaf002e4737d192547","time":"2018-11-14T17:06:58.186+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90474,"name":"Багажники,
+        рейлинги","fullName":"Автомобильные багажники, рейлинги и комплекты крепежа","link":"https://market.yandex.ru/catalog--avtomobilnye-bagazhniki-reilingi-i-komplekty-krepezha/90474/list?hid=90474&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208029,"name":"Багажные
+        боксы","fullName":"Багажные боксы","link":"https://market.yandex.ru/catalog--bagazhnye-boksy/13208029/list?hid=13208029&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208041,"name":"Крепления
+        и аксессуары для багажа","fullName":"Автомобильные крепления и аксессуары
+        для багажа","link":"https://market.yandex.ru/catalog--avtomobilnye-krepleniia-i-aksessuary-dlia-bagazha/13208041/list?hid=13208041&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":6139445,"name":"Фаркопы","fullName":"Фаркопы","link":"https://market.yandex.ru/catalog--farkopy/6139445/list?hid=6139445&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:21 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/4953538/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:58 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9688x11141286ad09
+      X-Market-Req-Id:
+      - 1542204418837/15f997f2662358fd67c160442d9fe967
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '98'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:06:59 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:06:59 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971766'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=nWiQkq8pHTDN87Unk8Ay//IqhQhKETPe8nbhds0JDKpqw76hPcQjLucdK620Ms7HkGzx7Bnt9FA0U8Xdl2soxfAkC+E=;
+        Expires=Sat, 11-Nov-2028 14:06:58 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAINHACtBMgMAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":15,"total":1},"id":"1542204418837/15f997f2662358fd67c160442d9fe967","time":"2018-11-14T17:06:58.84+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":12423968,"name":"Брызговики","fullName":"Автомобильные
+        брызговики","link":"https://market.yandex.ru/catalog--avtomobilnye-bryzgoviki/12423968/list?hid=12423968&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4949780,"name":"Дефлекторы","fullName":"Дефлекторы
+        автомобильные","link":"https://market.yandex.ru/catalog--deflektory-avtomobilnye/4949780/list?hid=4949780&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4953547,"name":"Защита
+        бампера","fullName":"Защита бампера","link":"https://market.yandex.ru/catalog--zashchita-bampera/4953547/list?hid=4953547&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4953550,"name":"Защита
+        картера, двигателя, КПП","fullName":"Защита картера, двигателя, КПП","link":"https://market.yandex.ru/catalog--zashchita-kartera-dvigatelia-kpp/4953550/list?hid=4953550&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4953546,"name":"Защита
+        фар","fullName":"Защита фар","link":"https://market.yandex.ru/catalog--zashchita-far/4953546/list?hid=4953546&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208057,"name":"Колпаки
+        на колеса","fullName":"Колпаки на автомобильные колеса","link":"https://market.yandex.ru/catalog--kolpaki-na-avtomobilnye-kolesa/13208057/list?hid=13208057&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208125,"name":"Накладки
+        на кузов и стекла","fullName":"Накладки на кузов и стекла автомобиля","link":"https://market.yandex.ru/catalog--nakladki-na-kuzov-i-stekla-avtomobilia/13208125/list?hid=13208125&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90472,"name":"Наклейки,
+        шильдики и значки","fullName":"Наклейки, шильдики и значки для автомобиля","link":"https://market.yandex.ru/catalog--nakleiki-shildiki-i-znachki-dlia-avtomobilia/90472/list?hid=90472&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208217,"name":"Пленка","fullName":"Пленка
+        для автомобиля","link":"https://market.yandex.ru/catalog--plenka-dlia-avtomobilia/13208217/list?hid=13208217&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4953551,"name":"Подкрылки
+        и расширители арок","fullName":"Подкрылки и расширители колесных арок для
+        автомобиля","link":"https://market.yandex.ru/catalog--podkrylki-i-rasshiriteli-kolesnykh-arok-dlia-avtomobilia/4953551/list?hid=4953551&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208052,"name":"Пороги
+        и накладки на них","fullName":"Автомобильные пороги и накладки на пороги","link":"https://market.yandex.ru/catalog--avtomobilnye-porogi-i-nakladki-na-porogi/13208052/list?hid=13208052&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":289014,"name":"Прочие
+        элементы тюнинга","fullName":"Прочие элементы тюнинга автомобиля","link":"https://market.yandex.ru/catalog--prochie-elementy-tiuninga-avtomobilia/289014/list?hid=289014&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208249,"name":"Рамки
+        для номеров","fullName":"Рамки для автомобильных номеров","link":"https://market.yandex.ru/catalog--ramki-dlia-avtomobilnykh-nomerov/13208249/list?hid=13208249&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208229,"name":"Силовые
+        бамперы","fullName":"Силовые бамперы для внедорожников","link":"https://market.yandex.ru/catalog--silovye-bampery-dlia-vnedorozhnikov/13208229/list?hid=13208229&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13208218,"name":"Шноркели","fullName":"Шноркели
+        для внедорожников","link":"https://market.yandex.ru/catalog--shnorkeli-dlia-vnedorozhnikov/13208218/list?hid=13208218&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:22 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/12327203/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:06:59 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1745x11141266818e
+      X-Market-Req-Id:
+      - 1542204419492/70a2eb0d79d55238ae4e61ab44141e6e
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:00 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:00 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971764'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=H/xOcv0eI7xR/uvXLnf9G8XNGa+SOg/wLTxTLM2eTps3a1ErPAAbiMsPu9cV58UwRDLT6KMUxfUJfS4W0QsnQzqkFqg=;
+        Expires=Sat, 11-Nov-2028 14:06:59 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAOl8AE1E1KkAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":3,"total":1},"id":"1542204419492/70a2eb0d79d55238ae4e61ab44141e6e","time":"2018-11-14T17:06:59.495+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":285249,"name":"Тенты
+        для автомобиля","fullName":"Тенты для автомобиля","link":"https://market.yandex.ru/catalog--tenty-dlia-avtomobilia/285249/list?hid=285249&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":11741397,"name":"Утеплители
+        двигателя","fullName":"Утеплители для двигателя автомобиля","link":"https://market.yandex.ru/catalog--utepliteli-dlia-dvigatelia-avtomobilia/11741397/list?hid=11741397&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90468,"name":"Щетки
+        и скребки","fullName":"Автомобильные щетки и скребки","link":"https://market.yandex.ru/catalog--avtomobilnye-shchetki-i-skrebki/90468/list?hid=90468&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:22 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/12327172/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:00 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9668x1114128448c6
+      X-Market-Req-Id:
+      - 1542204420149/6ca5d395816bd6eb6ae70431c9ead56a
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:01 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:01 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971762'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=fdyoVIC7jDyUJ+M1YTlN2+RAFU1C/ZpBNAYDTbO5Rkb3V/nDXnqrvkY8ortsbteetYhuVtLmizssXZfX1DDDr15uOa8=;
+        Expires=Sat, 11-Nov-2028 14:07:00 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAQrkAFUBe5IAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":4,"total":1},"id":"1542204420149/6ca5d395816bd6eb6ae70431c9ead56a","time":"2018-11-14T17:07:00.152+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90467,"name":"Автоаптечки","fullName":"Автоаптечки","link":"https://market.yandex.ru/catalog--avtoaptechki/90467/list?hid=90467&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90446,"name":"Буксировочные
+        тросы","fullName":"Буксировочные тросы","link":"https://market.yandex.ru/catalog--buksirovochnye-trosy/90446/list?hid=90446&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13199957,"name":"Знаки
+        аварийной остановки","fullName":"Знаки аварийной остановки","link":"https://market.yandex.ru/catalog--znaki-avariinoi-ostanovki/13199957/list?hid=13199957&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13199962,"name":"Наборы
+        и комплекты","fullName":"Наборы и комплекты для автомобилистов","link":"https://market.yandex.ru/catalog--nabory-i-komplekty-dlia-avtomobilistov/13199962/list?hid=13199962&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:23 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/12327158/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:01 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1264p111412795c8c
+      X-Market-Req-Id:
+      - 1542204421434/4c398d54931c0dc23aad3c3ca98089f4
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:02 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971759'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=cLsucYdodV/6nrFiOhzTfEy1MEBXtrVa5E1UJk7p6oVa2k7bGv4cAvy3LoocqS5HgtMFDQ9DzbSelc7vZ7aNbGMMdhg=;
+        Expires=Sat, 11-Nov-2028 14:07:00 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAifFvsLAWMmAFUCxajAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":7,"total":1},"id":"1542204421434/4c398d54931c0dc23aad3c3ca98089f4","time":"2018-11-14T17:07:01.519+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":13208000,"name":"Автомобильные
+        чайники и кофеварки","fullName":"Автомобильные чайники и кофеварки","link":"https://market.yandex.ru/catalog--avtomobilnye-chainiki-i-kofevarki/13208000/list?hid=13208000&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90471,"name":"Коврики","fullName":"Коврики
+        для автомобиля","link":"https://market.yandex.ru/catalog--kovriki-dlia-avtomobilia/90471/list?hid=90471&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":599236,"name":"Оплетки
+        на руль","fullName":"Оплетки и чехлы на руль автомобиля","link":"https://market.yandex.ru/catalog--opletki-i-chekhly-na-rul-avtomobilia/599236/list?hid=599236&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":599237,"name":"Ручки
+        КПП","fullName":"Ручки КПП для автомобиля","link":"https://market.yandex.ru/catalog--ruchki-kpp-dlia-avtomobilia/599237/list?hid=599237&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13207991,"name":"Сумки
+        и органайзеры","fullName":"Автомобильные сумки и органайзеры","link":"https://market.yandex.ru/catalog--avtomobilnye-sumki-i-organaizery/13207991/list?hid=13207991&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90465,"name":"Чехлы
+        и накидки на сиденья","fullName":"Чехлы и накидки на сиденья","link":"https://market.yandex.ru/catalog--chekhly-i-nakidki-na-sidenia/90465/list?hid=90465&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13207994,"name":"Шторки","fullName":"Автомобильные
+        шторки","link":"https://market.yandex.ru/catalog--avtomobilnye-shtorki/13207994/list?hid=13207994&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:24 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90403/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9640x11141281e480
+      X-Market-Req-Id:
+      - 1542204422176/3656879f5f54a97cc006ef5c00e64536
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:03 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:03 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971757'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=k4A6qPT5K01mJvcZpJa6UYNOOYD1T0FaGiRXoONcFa07AgseTYrjZqyWT6DVDsPk0RBHwKsQm3uWgKW3P4rAmOADujE=;
+        Expires=Sat, 11-Nov-2028 14:07:02 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAaq0wBRBymwAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":11,"total":1},"id":"1542204422176/3656879f5f54a97cc006ef5c00e64536","time":"2018-11-14T17:07:02.178+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":6122737,"name":"FM-трансмиттеры","fullName":"Автомобильные
+        FM-трансмиттеры","link":"https://market.yandex.ru/catalog--avtomobilnye-fm-transmittery/6122737/list?hid=6122737&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":308016,"name":"Автоакустика","fullName":"Автомобильная
+        акустика","link":"https://market.yandex.ru/catalog--avtomobilnaia-akustika/308016/list?hid=308016&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90404,"name":"Автомагнитолы","fullName":"Автомагнитолы","link":"https://market.yandex.ru/catalog--avtomagnitoly/90404/list?hid=90404&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"GRID"},{"id":90417,"name":"Автомобильные
+        телевизоры","fullName":"Автомобильные телевизоры и мониторы","link":"https://market.yandex.ru/catalog--avtomobilnye-televizory-i-monitory/90417/list?hid=90417&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90409,"name":"Аксессуары","fullName":"Аксессуары
+        для автомобильной аудиотехники","link":"https://market.yandex.ru/catalog--aksessuary-dlia-avtomobilnoi-audiotekhniki/90409/list?hid=90409&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":289012,"name":"Акустические
+        полки, короба и подиумы","fullName":"Акустические полки, короба и подиумы
+        для автомобиля","link":"https://market.yandex.ru/catalog--akusticheskie-polki-koroba-i-podiumy-dlia-avtomobilia/289012/list?hid=289012&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90407,"name":"Антенны","fullName":"Автомобильные
+        антенны","link":"https://market.yandex.ru/catalog--avtomobilnye-antenny/90407/list?hid=90407&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":7717599,"name":"Переходные
+        рамки","fullName":"Переходные рамки для автомагнитол","link":"https://market.yandex.ru/catalog--perekhodnye-ramki-dlia-avtomagnitol/7717599/list?hid=7717599&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90408,"name":"Усилители","fullName":"Автомобильные
+        усилители","link":"https://market.yandex.ru/catalog--avtomobilnye-usiliteli/90408/list?hid=90408&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":294642,"name":"Чейнджеры","fullName":"Автомобильные
+        чейнджеры","link":"https://market.yandex.ru/catalog--avtomobilnye-cheindzhery/294642/list?hid=294642&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":9335976,"name":"Шумоизоляция","fullName":"Шумоизоляция
+        для автомобилей","link":"https://market.yandex.ru/catalog--shumoizoliatsiia-dlia-avtomobilei/9335976/list?hid=9335976&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:25 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90435/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9640x11141281e52f
+      X-Market-Req-Id:
+      - 1542204422826/3a14b2128cb310d86382fba22d53b91b
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '98'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:03 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:03 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971755'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=m5Ud8Otez/C4HmuBGvdBSDNcf4u0/n3iQ3+1DAQLxS1ofWBOGejMH8TsAQvCOD5hAr1SsMahGDNB+UmMGFK2GcZ0UoA=;
+        Expires=Sat, 11-Nov-2028 14:07:02 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAaq0wBRBypZAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":20,"total":1},"id":"1542204422826/3a14b2128cb310d86382fba22d53b91b","time":"2018-11-14T17:07:02.829+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":6499811,"name":"Автосвет","fullName":"Автомобильное
+        освещение","link":"https://market.yandex.ru/catalog--avtomobilnoe-osveshchenie/6499811/list?hid=6499811&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":5,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12327183,"name":"Аккумуляторы","fullName":"Автомобильные
+        аккумуляторы и зарядные устройства","link":"https://market.yandex.ru/catalog--avtomobilnye-akkumuliatory-i-zariadnye-ustroistva/12327183/list?hid=12327183&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90437,"name":"Двигатель","fullName":"Двигатели
+        для автомобилей","link":"https://market.yandex.ru/catalog--dvigateli-dlia-avtomobilei/90437/list?hid=90437&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90464,"name":"Зеркала
+        заднего вида","fullName":"Зеркала заднего вида для автомобиля","link":"https://market.yandex.ru/catalog--zerkala-zadnego-vida-dlia-avtomobilia/90464/list?hid=90464&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90438,"name":"Кузов","fullName":"Кузовные
+        детали для автомобилей","link":"https://market.yandex.ru/catalog--kuzovnye-detali-dlia-avtomobilei/90438/list?hid=90438&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90447,"name":"Омыватель","fullName":"Омыватель
+        для автомобилей","link":"https://market.yandex.ru/catalog--omyvatel-dlia-avtomobilei/90447/list?hid=90447&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90451,"name":"Подвеска","fullName":"Подвеска
+        для автомобилей","link":"https://market.yandex.ru/catalog--podveska-dlia-avtomobilei/90451/list?hid=90451&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14423069,"name":"Подшипники","fullName":"Подшипники","link":"https://market.yandex.ru/catalog--podshipniki/14423069/list?hid=14423069&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90445,"name":"Привод","fullName":"Привод
+        для автомобилей","link":"https://market.yandex.ru/catalog--privod-dlia-avtomobilei/90445/list?hid=90445&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90439,"name":"Рулевое
+        управление","fullName":"Рулевое управление для автомобилей","link":"https://market.yandex.ru/catalog--rulevoe-upravlenie-dlia-avtomobilei/90439/list?hid=90439&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90441,"name":"Салон","fullName":"Салон
+        для автомобилей","link":"https://market.yandex.ru/catalog--salon-dlia-avtomobilei/90441/list?hid=90441&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14696956,"name":"Свечи
+        зажигания","fullName":"Свечи зажигания","link":"https://market.yandex.ru/catalog--svechi-zazhiganiia/14696956/list?hid=14696956&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":278339,"name":"Сигналы","fullName":"Автомобильные
+        сигналы","link":"https://market.yandex.ru/catalog--avtomobilnye-signaly/278339/list?hid=278339&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90450,"name":"Система
+        выпуска","fullName":"Система выпуска для автомобилей","link":"https://market.yandex.ru/catalog--sistema-vypuska-dlia-avtomobilei/90450/list?hid=90450&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90452,"name":"Стекла","fullName":"Стекла
+        для автомобилей","link":"https://market.yandex.ru/catalog--stekla-dlia-avtomobilei/90452/list?hid=90452&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90443,"name":"Топливная
+        система","fullName":"Топливная система для автомобилей","link":"https://market.yandex.ru/catalog--toplivnaia-sistema-dlia-avtomobilei/90443/list?hid=90443&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":599244,"name":"Тормозная
+        система","fullName":"Тормозная система для автомобилей","link":"https://market.yandex.ru/catalog--tormoznaia-sistema-dlia-avtomobilei/599244/list?hid=599244&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90453,"name":"Трансмиссия","fullName":"Трансмиссия
+        для автомобилей","link":"https://market.yandex.ru/catalog--transmissiia-dlia-avtomobilei/90453/list?hid=90453&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12327177,"name":"Фильтры","fullName":"Фильтры
+        автомобильные","link":"https://market.yandex.ru/catalog--filtry-avtomobilnye/12327177/list?hid=12327177&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":4,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90440,"name":"Электрика","fullName":"Автомобильная
+        электрика","link":"https://market.yandex.ru/catalog--avtomobilnaia-elektrika/90440/list?hid=90440&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:26 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/6499811/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:03 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9640x11141281e5f5
+      X-Market-Req-Id:
+      - 1542204423474/560c0a5552a906ed11d36b9463c5dc10
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:04 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:04 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971753'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=ILD9eLBR0WuCflFRJIO/dWTE5uMFvmtempIr98nNsydc50taDA9HibKRpgQEqK8EG750nFepLJxof0u/IioonlZ+q/0=;
+        Expires=Sat, 11-Nov-2028 14:07:03 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAeq0wBRBysiAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":5,"total":1},"id":"1542204423474/560c0a5552a906ed11d36b9463c5dc10","time":"2018-11-14T17:07:03.477+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":13885651,"name":"Комплектующие
+        к ксенону","fullName":"Комплектующие к ксенону","link":"https://market.yandex.ru/catalog--komplektuiushchie-k-ksenonu/13885651/list?hid=13885651&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":599239,"name":"Ксенон","fullName":"Автомобильный
+        ксенон","link":"https://market.yandex.ru/catalog--avtomobilnyi-ksenon/599239/list?hid=599239&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14405299,"name":"Лампы
+        для автомобилей","fullName":"Лампы для автомобилей","link":"https://market.yandex.ru/catalog--lampy-dlia-avtomobilei/14405299/list?hid=14405299&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":289013,"name":"Подсветка","fullName":"Подсветка
+        для автомобиля","link":"https://market.yandex.ru/catalog--podsvetka-dlia-avtomobilia/289013/list?hid=289013&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":599235,"name":"Фары","fullName":"Фары
+        для автомобилей","link":"https://market.yandex.ru/catalog--fary-dlia-avtomobilei/599235/list?hid=599235&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:26 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/12327183/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:04 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9672x11141263b8ff
+      X-Market-Req-Id:
+      - 1542204424127/633212a445364d212a6c802ed2777fda
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:05 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:05 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971751'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=1xodsUDO0LjV5452rgS5Zn2I7qhV0SkhbESWJXmIY2Yl2371sCBzG2TKWd35KLujfrd1VSmHkKsVCA91OQpifTx0CqM=;
+        Expires=Sat, 11-Nov-2028 14:07:04 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAiRlgE5FLsnAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":3,"total":1},"id":"1542204424127/633212a445364d212a6c802ed2777fda","time":"2018-11-14T17:07:04.129+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90436,"name":"Аккумуляторные
+        батареи","fullName":"Автомобильные аккумуляторы","link":"https://market.yandex.ru/catalog--avtomobilnye-akkumuliatory/90436/list?hid=90436&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":6856242,"name":"Зарядные
+        устройства для аккумуляторов","fullName":"Зарядные и пуско-зарядные устройства
+        для аккумуляторов","link":"https://market.yandex.ru/catalog--zariadnye-i-pusko-zariadnye-ustroistva-dlia-akkumuliatorov/6856242/list?hid=6856242&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12757915,"name":"Пусковые
+        провода","fullName":"Пусковые провода для автомобилей","link":"https://market.yandex.ru/catalog--puskovye-provoda-dlia-avtomobilei/12757915/list?hid=12757915&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:27 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/12327177/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:04 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9688x11141286b3b2
+      X-Market-Req-Id:
+      - 1542204424776/854aac5e95f88b61a859b2c81b675bc0
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:05 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:05 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971749'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=sTwVPVH50lFqmVLkK9rofNFxw2zu/KEKoMwZiRfksQpVkYg7H1ttX/wEWjYhdqgGQf9Yvdr+QKgL95y16tV2mguUwpY=;
+        Expires=Sat, 11-Nov-2028 14:07:04 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAgNHACtBM6XAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":4,"total":1},"id":"1542204424776/854aac5e95f88b61a859b2c81b675bc0","time":"2018-11-14T17:07:04.78+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":6101352,"name":"Воздушные
+        фильтры","fullName":"Воздушные фильтры для двигателей","link":"https://market.yandex.ru/catalog--vozdushnye-filtry-dlia-dvigatelei/6101352/list?hid=6101352&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90442,"name":"Масляные
+        фильтры","fullName":"Масляные фильтры для автомобилей","link":"https://market.yandex.ru/catalog--maslianye-filtry-dlia-avtomobilei/90442/list?hid=90442&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13477846,"name":"Салонные
+        фильтры","fullName":"Салонные фильтры","link":"https://market.yandex.ru/catalog--salonnye-filtry/13477846/list?hid=13477846&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90449,"name":"Топливные
+        фильтры","fullName":"Топливные фильтры для автомобилей","link":"https://market.yandex.ru/catalog--toplivnye-filtry-dlia-avtomobilei/90449/list?hid=90449&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:27 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90477/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:05 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9668x111412844ea7
+      X-Market-Req-Id:
+      - 1542204425431/4c8c6ca85750bc0ca9af248c4041b1a1
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:06 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:06 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971747'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=Hh7fnwj6bW9PW8/dHFHrvzFltgjpilXi/1+gfLTbRxRWKjElOCUypwCI2hG/r9g02zsD9BVmUmbfXTUtlJ93Fn90Wf0=;
+        Expires=Sat, 11-Nov-2028 14:07:05 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAkrkAFUBfQgAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":7,"total":1},"id":"1542204425431/4c8c6ca85750bc0ca9af248c4041b1a1","time":"2018-11-14T17:07:05.434+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90480,"name":"Антифризы","fullName":"Автомобильные
+        антифризы","link":"https://market.yandex.ru/catalog--avtomobilnye-antifrizy/90480/list?hid=90480&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90479,"name":"Масло
+        трансмиссионное","fullName":"Автомобильное трансмиссионное масло","link":"https://market.yandex.ru/catalog--avtomobilnoe-transmissionnoe-maslo/90479/list?hid=90479&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90478,"name":"Моторные
+        масла","fullName":"Моторные масла","link":"https://market.yandex.ru/catalog--motornye-masla/90478/list?hid=90478&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14350309,"name":"Присадки
+        и промывки","fullName":"Присадки и промывки для автомобилей","link":"https://market.yandex.ru/catalog--prisadki-i-promyvki-dlia-avtomobilei/14350309/list?hid=14350309&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90489,"name":"Смазки","fullName":"Смазки
+        для автомобилей","link":"https://market.yandex.ru/catalog--smazki-dlia-avtomobilei/90489/list?hid=90489&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14368112,"name":"Специальные
+        масла","fullName":"Специальные масла для автомобилей","link":"https://market.yandex.ru/catalog--spetsialnye-masla-dlia-avtomobilei/14368112/list?hid=14368112&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90486,"name":"Тормозные
+        жидкости","fullName":"Тормозные жидкости для автомобилей","link":"https://market.yandex.ru/catalog--tormoznye-zhidkosti-dlia-avtomobilei/90486/list?hid=90486&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:28 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90497/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:06 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9668x111412844f79
+      X-Market-Req-Id:
+      - 1542204426095/908d7ac285f33110a75c3b5efb00c839
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:07 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:07 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971745'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=/a09lr9A2qgNB0VqP6y3/4MmrE2Rwi+UuKkTNz1Coe9WBv4iY8RZ7bdSSB2v1eXQg85Ug0+NXd3CySgWBMNctM97jYU=;
+        Expires=Sat, 11-Nov-2028 14:07:06 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAorkAFUBfUAAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":7,"total":1},"id":"1542204426095/908d7ac285f33110a75c3b5efb00c839","time":"2018-11-14T17:07:06.097+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":10833344,"name":"Аксессуары","fullName":"Аксессуары
+        для мототехники","link":"https://market.yandex.ru/catalog--aksessuary-dlia-mototekhniki/10833344/list?hid=10833344&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14348682,"name":"Ветровые
+        стекла","fullName":"Ветровые стекла для мотоциклов","link":"https://market.yandex.ru/catalog--vetrovye-stekla-dlia-mototsiklov/14348682/list?hid=14348682&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":10833347,"name":"Запчасти","fullName":"Запчасти
+        и расходники для мототехники","link":"https://market.yandex.ru/catalog--zapchasti-i-raskhodniki-dlia-mototekhniki/10833347/list?hid=10833347&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90498,"name":"Мотоциклы","fullName":"Мотоциклы","link":"https://market.yandex.ru/catalog--mototsikly/90498/list?hid=90498&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":1037332,"name":"Скутеры","fullName":"Скутеры","link":"https://market.yandex.ru/catalog--skutery/1037332/list?hid=1037332&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90499,"name":"Снегоходы","fullName":"Снегоходы","link":"https://market.yandex.ru/catalog--snegokhody/90499/list?hid=90499&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13946516,"name":"Экипировка
+        и защита","fullName":"Мотоциклетная экипировка и защита","link":"https://market.yandex.ru/catalog--mototsikletnaia-ekipirovka-i-zashchita/13946516/list?hid=13946516&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":12,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:29 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/13946516/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:06 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x11141289aed8
+      X-Market-Req-Id:
+      - 1542204426747/e2e7e4867139048a95ee5f7155a2670c
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:07 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:07 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971744'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=cm3H/zlM/hDCH9/XGjRVJboXiiGI78YoCmJPJXNebDVoSKUcFDX5yn7mG5RPmIGU1n9lkwqScqg4CUGoZpPhncYLlPE=;
+        Expires=Sat, 11-Nov-2028 14:07:06 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAqxPgFOA24uAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":12,"total":1},"id":"1542204426747/e2e7e4867139048a95ee5f7155a2670c","time":"2018-11-14T17:07:06.75+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":13876322,"name":"Брюки","fullName":"Брюки
+        для мотоциклистов","link":"https://market.yandex.ru/catalog--briuki-dlia-mototsiklistov/13876322/list?hid=13876322&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876434,"name":"Джерси","fullName":"Джерси
+        для мотоциклистов","link":"https://market.yandex.ru/catalog--dzhersi-dlia-mototsiklistov/13876434/list?hid=13876434&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876433,"name":"Запчасти
+        для шлемов","fullName":"Запчасти для шлемов","link":"https://market.yandex.ru/catalog--zapchasti-dlia-shlemov/13876433/list?hid=13876433&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876421,"name":"Запчасти
+        для экипировки","fullName":"Запчасти для экипировки","link":"https://market.yandex.ru/catalog--zapchasti-dlia-ekipirovki/13876421/list?hid=13876421&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876298,"name":"Костюмы","fullName":"Костюмы
+        для мотоциклистов","link":"https://market.yandex.ru/catalog--kostiumy-dlia-mototsiklistov/13876298/list?hid=13876298&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876313,"name":"Куртки","fullName":"Куртки
+        для мотоциклистов","link":"https://market.yandex.ru/catalog--kurtki-dlia-mototsiklistov/13876313/list?hid=13876313&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876419,"name":"Очки
+        и маски","fullName":"Очки и маски для мотоциклистов","link":"https://market.yandex.ru/catalog--ochki-i-maski-dlia-mototsiklistov/13876419/list?hid=13876419&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876448,"name":"Переговорные
+        устройства","fullName":"Переговорные устройства для мотоциклистов","link":"https://market.yandex.ru/catalog--peregovornye-ustroistva-dlia-mototsiklistov/13876448/list?hid=13876448&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876352,"name":"Перчатки","fullName":"Перчатки
+        для мотоциклистов","link":"https://market.yandex.ru/catalog--perchatki-dlia-mototsiklistov/13876352/list?hid=13876352&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876334,"name":"Сапоги
+        и ботинки","fullName":"Сапоги и ботинки для мотоциклистов","link":"https://market.yandex.ru/catalog--sapogi-i-botinki-dlia-mototsiklistov/13876334/list?hid=13876334&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876406,"name":"Функциональная
+        одежда","fullName":"Функциональная одежда для мотоциклистов","link":"https://market.yandex.ru/catalog--funktsionalnaia-odezhda-dlia-mototsiklistov/13876406/list?hid=13876406&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13876288,"name":"Шлемы","fullName":"Шлемы
+        для мотоциклистов","link":"https://market.yandex.ru/catalog--shlemy-dlia-mototsiklistov/13876288/list?hid=13876288&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:29 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90455/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:07 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9670x11141289afa8
+      X-Market-Req-Id:
+      - 1542204427409/66ec1dc27d49cb1f60578e8f39a88278
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:08 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:08 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971743'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=9OCQTgithFD3bodtWepT44rZqJPXDLA3me+ErAGTQxcOE5aYs2DsxjkNGAbJzUOV6DU1/2l3m8+JoiCdi6xDP26REDQ=;
+        Expires=Sat, 11-Nov-2028 14:07:07 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAuxPgFOA276Ag==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":6,"total":1},"id":"1542204427409/66ec1dc27d49cb1f60578e8f39a88278","time":"2018-11-14T17:07:07.436+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90458,"name":"Автопейджеры","fullName":"Автопейджеры","link":"https://market.yandex.ru/catalog--avtopeidzhery/90458/list?hid=90458&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90459,"name":"Автосигнализации","fullName":"Автосигнализации","link":"https://market.yandex.ru/catalog--avtosignalizatsii/90459/list?hid=90459&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14919550,"name":"Брелки
+        и чехлы","fullName":"Брелки и чехлы для автосигнализаций","link":"https://market.yandex.ru/catalog--brelki-i-chekhly-dlia-avtosignalizatsii/14919550/list?hid=14919550&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90460,"name":"Иммобилайзеры","fullName":"Иммобилайзеры
+        для автомобиля","link":"https://market.yandex.ru/catalog--immobilaizery-dlia-avtomobilia/90460/list?hid=90460&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90457,"name":"Механические
+        блокираторы","fullName":"Механические блокираторы для автомобиля","link":"https://market.yandex.ru/catalog--mekhanicheskie-blokiratory-dlia-avtomobilia/90457/list?hid=90457&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90456,"name":"Противоугонные
+        комплексы","fullName":"Противоугонные комплексы для автомобиля","link":"https://market.yandex.ru/catalog--protivougonnye-kompleksy-dlia-avtomobilia/90456/list?hid=90456&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:30 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/90506/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:08 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9688x11141286b7b7
+      X-Market-Req-Id:
+      - 1542204428081/3fd4351dd973b058f2897e103a539bb2
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:09 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:09 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971742'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=BHcd79jChLUpWg/vpmMMaxl+n2oKPZs6HhL/oeEk6bjhjytTqTQyzCIz8p/nnr4BXYs26cjNdRiUTyxJNU48DYuPHqw=;
+        Expires=Sat, 11-Nov-2028 14:07:08 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAwNHACtBNKZAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":3,"total":1},"id":"1542204428081/3fd4351dd973b058f2897e103a539bb2","time":"2018-11-14T17:07:08.083+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":119742,"name":"Коммунальная
+        техника","fullName":"Коммунальная автотехника","link":"https://market.yandex.ru/catalog--kommunalnaia-avtotekhnika/119742/list?hid=119742&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":240117,"name":"Погрузчики","fullName":"Погрузчики","link":"https://market.yandex.ru/catalog--pogruzchiki/240117/list?hid=240117&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":12515112,"name":"Строительная
+        техника","fullName":"Строительная техника","link":"https://market.yandex.ru/catalog--stroitelnaia-tekhnika/12515112/list?hid=12515112&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:31 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/10613554/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:08 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9672x11141263be9c
+      X-Market-Req-Id:
+      - 1542204428728/fc36299e8c085a7b7a91a6d847230c26
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '98'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:09 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '0'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:09 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971741'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=+XGqqJQRxgwEQdQhqFqYQj8jgC9y6DbK8ix0g2wBCuD0z1IgQbY4qwwQESzXsYdB8q+ct7M2AhTSg2fTXeppuC/6DME=;
+        Expires=Sat, 11-Nov-2028 14:07:08 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLAyRlgE5FMDBAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":3,"total":1},"id":"1542204428728/fc36299e8c085a7b7a91a6d847230c26","time":"2018-11-14T17:07:08.731+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90418,"name":"Автомобили","fullName":"Автомобили","link":"https://market.yandex.ru/catalog--avtomobili/90418/list?hid=90418&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90505,"name":"Грузовые
+        машины","fullName":"Грузовые машины","link":"https://market.yandex.ru/catalog--gruzovye-mashiny/90505/list?hid=90505&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":433969,"name":"Прицепы","fullName":"Прицепы","link":"https://market.yandex.ru/catalog--pritsepy/433969/list?hid=433969&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:31 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/10613544/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:09 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9672x11141263bf69
+      X-Market-Req-Id:
+      - 1542204429381/cdd351eb42bf6dc7654e763b65e2df54
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:10 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:10 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971740'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=aYnRwI03PM3ece283/dTUVL7o1TEHO1FO+9tY6gYqgupCl/9V4oSCgPOVmhmfsiEKUP2oKlY6rSHIzuuFGmzld/4s10=;
+        Expires=Sat, 11-Nov-2028 14:07:09 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLA2RlgE5FMF0Ag==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":6,"total":1},"id":"1542204429381/cdd351eb42bf6dc7654e763b65e2df54","time":"2018-11-14T17:07:09.385+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":10530882,"name":"Грузовые
+        шины","fullName":"Грузовые шины","link":"https://market.yandex.ru/catalog--gruzovye-shiny/10530882/list?hid=10530882&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":14729831,"name":"Камеры
+        и ободные ленты","fullName":"Камеры и ободные ленты для автомобилей и мотоциклов","link":"https://market.yandex.ru/catalog--kamery-i-obodnye-lenty-dlia-avtomobilei-i-mototsiklov/14729831/list?hid=14729831&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13802718,"name":"Колесные
+        болты и секретки","fullName":"Колесные болты и секретки","link":"https://market.yandex.ru/catalog--kolesnye-bolty-i-sekretki/13802718/list?hid=13802718&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":166068,"name":"Колесные
+        диски","fullName":"Колесные диски","link":"https://market.yandex.ru/catalog--kolesnye-diski/166068/list?hid=166068&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"GRID"},{"id":7308012,"name":"Мотошины","fullName":"Шины
+        для мотоциклов","link":"https://market.yandex.ru/catalog--shiny-dlia-mototsiklov/7308012/list?hid=7308012&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90490,"name":"Шины","fullName":"Автомобильные
+        шины","link":"https://market.yandex.ru/catalog--avtomobilnye-shiny/90490/list?hid=90490&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"GRID"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:32 GMT
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/10613523/children?count=30&geo_id=225&page=1&sort=BY_NAME
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 14 Nov 2018 14:07:10 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h1745x111412668de2
+      X-Market-Req-Id:
+      - 1542204430028/cb1307026e05d25c2a6b11e884739337
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Wed, 14 Nov 2018 14:07:11 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Wed, 14 Nov 2018 14:07:11 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999971739'
+      X-Ratelimit-Daily-Until:
+      - Thu, 15 Nov 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=+X3mlVuqel3ijkpf/mccJCCUZvsbQYQ1XDgdnQPJzUcxDaxX8uqf0mbV66QSx4H1bA3VJoJl9P6zsufxIMdtAaIuEWM=;
+        Expires=Sat, 11-Nov-2028 14:07:10 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvsLA6l8AE1E17TAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":9,"total":1},"id":"1542204430028/cb1307026e05d25c2a6b11e884739337","time":"2018-11-14T17:07:10.031+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":13373756,"name":"Автомобильные
+        инверторы","fullName":"Автомобильные инверторы","link":"https://market.yandex.ru/catalog--avtomobilnye-invertory/13373756/list?hid=13373756&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":8231633,"name":"Автомобильные
+        радиостанции","fullName":"Автомобильные радиостанции","link":"https://market.yandex.ru/catalog--avtomobilnye-radiostantsii/8231633/list?hid=8231633&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4955914,"name":"Бортовые
+        компьютеры","fullName":"Автомобильные бортовые компьютеры","link":"https://market.yandex.ru/catalog--avtomobilnye-bortovye-kompiutery/4955914/list?hid=4955914&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":6269371,"name":"Видеорегистраторы","fullName":"Автомобильные
+        видеорегистраторы","link":"https://market.yandex.ru/catalog--avtomobilnye-videoregistratory/6269371/list?hid=6269371&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"GRID"},{"id":6496700,"name":"Камеры
+        заднего вида","fullName":"Автомобильные камеры заднего вида","link":"https://market.yandex.ru/catalog--avtomobilnye-kamery-zadnego-vida/6496700/list?hid=6496700&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90469,"name":"Парктроники","fullName":"Автомобильные
+        парковочные радары","link":"https://market.yandex.ru/catalog--avtomobilnye-parkovochnye-radary/90469/list?hid=90469&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90462,"name":"Радар-детекторы","fullName":"Радар-детекторы
+        автомобильные","link":"https://market.yandex.ru/catalog--radar-detektory-avtomobilnye/90462/list?hid=90462&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":13430397,"name":"Разветвители
+        прикуривателя","fullName":"Автомобильные разветвители прикуривателя","link":"https://market.yandex.ru/catalog--avtomobilnye-razvetviteli-prikurivatelia/13430397/list?hid=13430397&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":4317343,"name":"Устройства
+        громкой связи","fullName":"Автомобильные устройства громкой связи","link":"https://market.yandex.ru/catalog--avtomobilnye-ustroistva-gromkoi-sviazi/4317343/list?hid=4317343&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Wed, 14 Nov 2018 14:06:33 GMT
+recorded_with: VCR 4.0.0
