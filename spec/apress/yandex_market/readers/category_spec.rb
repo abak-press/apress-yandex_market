@@ -19,7 +19,7 @@ describe Apress::YandexMarket::Readers::Category do
       end
 
       it 'reads specified categories and their subcategories' do
-        expect(rows).to have(157).items
+        expect(rows).to have(326).items
         expect(rows.map { |row| row[:name] }).to include('Авто', 'Красота') # корневые категории
         expect(rows.map { |row| row[:name] }).
           to include('Авто', 'Запчасти', 'Фильтры', 'Воздушные фильтры') # поддерево от корня до листа

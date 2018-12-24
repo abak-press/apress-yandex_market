@@ -73,21 +73,7 @@ module Apress
           loop do
             sleep(SLEEP_TIME)
             categories =
-              begin
-                with_rescue_temporary_errors do
-                  client.
-                    get(
-                      "categories/#{parent_id}/children",
-                      geo_id: @region_id,
-                      sort: 'BY_NAME'.freeze,
-                      count: PAGE_SIZE,
-                      page: page
-                    ).
-                    fetch(:categories)
-                end
-              rescue Api::PageError
-                []
-              end
+              get_categories("categories/#{parent_id}/children", page)
 
             page += 1
 
@@ -103,11 +89,27 @@ module Apress
           end
         end
 
-        def root_categories
-          client.
-            get('categories', geo_id: @region_id).
-            fetch(:categories).
-            select { |category| @categories.include?(category.fetch(:name)) }
+        def root_categories(page = 1)
+          categories = get_categories('categories', page)
+          categories += root_categories(page + 1) unless categories.size < PAGE_SIZE
+
+          categories.select! { |category| @categories.include?(category.fetch(:name)) }
+        end
+
+        def get_categories(resource, page)
+          with_rescue_temporary_errors do
+            client.
+              get(
+                resource,
+                geo_id: @region_id,
+                sort: 'BY_NAME'.freeze,
+                count: PAGE_SIZE,
+                page: page
+              ).
+              fetch(:categories)
+          end
+        rescue Api::PageError
+          []
         end
       end
     end
