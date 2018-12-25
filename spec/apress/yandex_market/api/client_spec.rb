@@ -5,14 +5,14 @@ describe Apress::YandexMarket::Api::Client do
 
   describe '#get' do
     context 'get root categores' do
-      subject { client.get('categories', geo_id: 225) }
+      subject { client.get('categories', geo_id: 225, count: 30) }
 
       it do
         VCR.use_cassette 'get_root_categories' do
           expect(subject).to be_a Hash
           expect(subject).to include(:categories, :context, :status)
           expect(subject[:status]).to eq 'OK'
-          expect(subject[:categories]).to have(10).items
+          expect(subject[:categories]).to have(18).items
         end
       end
     end
