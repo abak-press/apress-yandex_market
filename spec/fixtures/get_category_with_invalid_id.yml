@@ -1,0 +1,81 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories/999999999?geo_id=225
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - some_secret_token
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 01 Nov 2018 13:45:22 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - h9672x1101cf7fc849
+      X-Market-Req-Id:
+      - 1541079922406/bff948421ff4ffc38c089609f84b44cb
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Thu, 01 Nov 2018 13:45:23 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Thu, 01 Nov 2018 13:45:23 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999999508'
+      X-Ratelimit-Daily-Until:
+      - Fri, 02 Nov 2018 00:00:00 GMT
+      Content-Language:
+      - en-US
+      Cache-Control:
+      - no-store
+      Set-Cookie:
+      - i=nkVwTF0E65LH4sm4NpHIg5atL/I/faA0FmAPCndzPTcPoUFHMQZ6uan3HuO9B80ZasE1jpwvJexdt/1tRFSNHb9nnCk=;
+        Expires=Sun, 29-Oct-2028 13:45:22 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFvbA3KyYgE+BT9sAg==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJzdGF0dXMiOiJFUlJPUiIsImNvbnRleHQiOnsicmVnaW9uIjp7ImlkIjoy
+        MjUsIm5hbWUiOiLQoNC+0YHRgdC40Y8iLCJ0eXBlIjoiQ09VTlRSWSIsImNo
+        aWxkQ291bnQiOjEwLCJjb3VudHJ5Ijp7ImlkIjoyMjUsIm5hbWUiOiLQoNC+
+        0YHRgdC40Y8iLCJ0eXBlIjoiQ09VTlRSWSIsImNoaWxkQ291bnQiOjEwfX0s
+        ImN1cnJlbmN5Ijp7ImlkIjoiUlVSIiwibmFtZSI6ItGA0YPQsS4ifSwiaWQi
+        OiIxNTQxMDc5OTIyNDA2L2JmZjk0ODQyMWZmNGZmYzM4YzA4OTYwOWY4NGI0
+        NGNiIiwidGltZSI6IjIwMTgtMTEtMDFUMTY6NDU6MjIuNDErMDM6MDAiLCJt
+        YXJrZXRVcmwiOiJodHRwczovL21hcmtldC55YW5kZXgucnU/cHA9MTAwMSZj
+        bGlkPTIzMjY2MDEmZGlzdHJfdHlwZT03In0sImVycm9ycyI6W3sibWVzc2Fn
+        ZSI6IkNhdGVnb3J5IDk5OTk5OTk5OSBub3QgZm91bmQifV19
+    http_version:
+  recorded_at: Thu, 01 Nov 2018 13:44:52 GMT
+recorded_with: VCR 4.0.0

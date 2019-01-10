@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.content.market.yandex.ru/v2/categories?count=30&geo_id=225
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.content.market.yandex.ru
+      Authorization:
+      - some_secret_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Dec 2018 14:10:52 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      X-Request-Id:
+      - v4739x1224e089d5f0
+      X-Market-Req-Id:
+      - 1545660652508/11de5b809782bd8b8b4921f259e5bae2
+      X-Region-Id:
+      - '225'
+      X-Ratelimit-Method-Limit:
+      - '100'
+      X-Ratelimit-Method-Remaining:
+      - '99'
+      X-Ratelimit-Method-Until:
+      - Mon, 24 Dec 2018 14:10:53 GMT
+      X-Ratelimit-Global-Limit:
+      - '2'
+      X-Ratelimit-Global-Remaining:
+      - '1'
+      X-Ratelimit-Global-Until:
+      - Mon, 24 Dec 2018 14:10:53 GMT
+      X-Ratelimit-Daily-Limit:
+      - '1000000000'
+      X-Ratelimit-Daily-Remaining:
+      - '999997022'
+      X-Ratelimit-Daily-Until:
+      - Tue, 25 Dec 2018 00:00:00 GMT
+      Set-Cookie:
+      - i=9aI1w1reokMFM7TMMP4ppKWfu6YJf7jNGgKKpRqkF/l9nNpIMedEGcsqFZ1VsoOxgRMQPl/HH/1alGV5pMG3DgLJaJs=;
+        Expires=Thu, 21-Dec-2028 14:10:52 GMT; Domain=.yandex.ru; Path=/; Secure;
+        HttpOnly
+      - uid=AAAihFwg6OwlVgDIBCM0Ag==; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","context":{"region":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10,"country":{"id":225,"name":"Россия","type":"COUNTRY","childCount":10}},"currency":{"id":"RUR","name":"руб."},"page":{"number":1,"count":18,"total":1},"id":"1545660652508/11de5b809782bd8b8b4921f259e5bae2","time":"2018-12-24T17:10:52.512+03:00","marketUrl":"https://market.yandex.ru?pp=1001&clid=2326601&distr_type=7"},"categories":[{"id":90402,"name":"Авто","fullName":"Товары
+        для авто- и мототехники","link":"https://market.yandex.ru/catalog--tovary-dlia-avto-i-mototekhniki/90402/list?hid=90402&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":12,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90509,"name":"Красота","fullName":"Товары
+        для красоты","link":"https://market.yandex.ru/catalog--tovary-dlia-krasoty/90509/list?hid=90509&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":3,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90666,"name":"Товары
+        для дома","fullName":"Товары для дома","link":"https://market.yandex.ru/catalog--tovary-dlia-doma/90666/list?hid=90666&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":9,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90719,"name":"Дача,
+        сад и огород","fullName":"Дача, сад и огород","link":"https://market.yandex.ru/catalog--dacha-sad-i-ogorod/90719/list?hid=90719&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":13,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90764,"name":"Детские
+        товары","fullName":"Детские товары","link":"https://market.yandex.ru/catalog--detskie-tovary/90764/list?hid=90764&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":6,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90801,"name":"Досуг
+        и развлечения","fullName":"Досуг и развлечения","link":"https://market.yandex.ru/catalog--dosug-i-razvlecheniia/90801/list?hid=90801&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":14,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":90813,"name":"Товары
+        для животных","fullName":"Товары для животных","link":"https://market.yandex.ru/catalog--tovary-dlia-zhivotnykh/90813/list?hid=90813&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":29,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91009,"name":"Компьютерная
+        техника","fullName":"Компьютерная техника","link":"https://market.yandex.ru/catalog--kompiuternaia-tekhnika/91009/list?hid=91009&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":12,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91307,"name":"Продукты","fullName":"Продукты,
+        напитки","link":"https://market.yandex.ru/catalog--produkty-napitki/91307/list?hid=91307&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":14,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91512,"name":"Спорт
+        и отдых","fullName":"Товары для спорта и отдыха","link":"https://market.yandex.ru/catalog--tovary-dlia-sporta-i-otdykha/91512/list?hid=91512&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":17,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91597,"name":"Строительство
+        и ремонт","fullName":"Товары для строительства и ремонта","link":"https://market.yandex.ru/catalog--tovary-dlia-stroitelstva-i-remonta/91597/list?hid=91597&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":7,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":198119,"name":"Электроника","fullName":"Электроника","link":"https://market.yandex.ru/catalog--elektronika/198119/list?hid=198119&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":7,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":198118,"name":"Бытовая
+        техника","fullName":"Бытовая техника","link":"https://market.yandex.ru/catalog--bytovaia-tekhnika/198118/list?hid=198118&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":6,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91735,"name":"Услуги","fullName":"Услуги","link":"https://market.yandex.ru/catalog--uslugi/91735/list?hid=91735&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":11,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":91763,"name":"Оборудование","fullName":"Оборудование","link":"https://market.yandex.ru/catalog--oborudovanie/91763/list?hid=91763&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":16,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":15807107,"name":"Услуги
+        по подписке","fullName":"Услуги по подписке","link":"https://market.yandex.ru/catalog--uslugi-po-podpiske/15807107/list?hid=15807107&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":0,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":8475840,"name":"Здоровье","fullName":"Товары
+        для здоровья","link":"https://market.yandex.ru/catalog--tovary-dlia-zdorovia/8475840/list?hid=8475840&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":15,"advertisingModel":"HYBRID","viewType":"LIST"},{"id":7877999,"name":"Одежда,
+        обувь и аксессуары","fullName":"Одежда, обувь и аксессуары","link":"https://market.yandex.ru/catalog--odezhda-obuv-i-aksessuary/7877999/list?hid=7877999&onstock=1&pp=1001&clid=2326601&distr_type=7","childCount":5,"advertisingModel":"HYBRID","viewType":"LIST"}]}'
+    http_version:
+  recorded_at: Mon, 24 Dec 2018 14:10:02 GMT
+recorded_with: VCR 4.0.0
