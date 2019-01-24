@@ -109,7 +109,8 @@ module Apress
             models = get_models(category_id, page, sort_direction)
 
             models.each do |model|
-              next if category_id != model.fetch(:category).fetch(:id)
+              next unless model[:category].is_a? Hash
+              next if category_id != model[:category][:id]
               return if processed_models.include? model
 
               processed_models << model
