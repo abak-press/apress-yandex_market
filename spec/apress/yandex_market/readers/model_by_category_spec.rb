@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Apress::YandexMarket::Readers::ModelByCategory do
-  let(:categories) { 'Красота' } # id: 90509
+  let(:categories) { 'Товары для красоты' } # id: 90509
   let(:reader) { described_class.new(token: 'secret_token', categories: categories) }
 
   describe '.allowed_options' do
@@ -25,8 +25,9 @@ describe Apress::YandexMarket::Readers::ModelByCategory do
       end
 
       it 'reads models of specified categories and their subcategories' do
-        expect(rows).to have(840).items
-        expect(rows.uniq).to have(840).items
+        expect(rows).to have(31).items
+        expect(rows.uniq).to have(31).items
+        expect(rows.select { |r| r[:price].nil? }).to be_empty
       end
     end
 
@@ -40,8 +41,9 @@ describe Apress::YandexMarket::Readers::ModelByCategory do
       end
 
       it 'reads models of specified categories and their subcategories' do
-        expect(rows).to have(838).items
-        expect(rows.uniq).to have(838).items
+        expect(rows).to have(29).items
+        expect(rows.uniq).to have(29).items
+        expect(rows.select { |r| r[:price].nil? }).to be_empty
       end
     end
   end

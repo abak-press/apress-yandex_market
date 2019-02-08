@@ -57,6 +57,9 @@ module Apress
           MODEL_VENDOR
         ).join(',').freeze
 
+        PRICE_FILTER_ID = '-1'.freeze # ID фильтра по цене
+        PRICE_FILTER = '0.01~'.freeze # фильтруем цену от 1 копейки, формат "min_value~max_value"
+
         class << self
           def allowed_options
             Readers::Category.allowed_options
@@ -135,7 +138,8 @@ module Apress
                 how: sort_direction,
                 fields: FIELDS,
                 count: PAGE_SIZE,
-                page: page
+                page: page,
+                PRICE_FILTER_ID => PRICE_FILTER
               ).
               fetch(:items)
           end
