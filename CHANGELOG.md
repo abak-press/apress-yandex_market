@@ -1,6 +1,11 @@
+# v0.2.0
+
+* 2019-02-18 [eabf640](../../commit/eabf640) - __(Mikhail Nelaev)__ Release 0.2.0 
+* 2019-02-08 [0dd6b17](../../commit/0dd6b17) - __(Mikhail Nelaev)__ feature: загружаем только товары в наличии 
+https://jira.railsc.ru/browse/GOODS-1657
+
 # v0.1.1
 
-* 2019-01-24 [d3d7504](../../commit/d3d7504) - __(Mikhail Nelaev)__ Release 0.1.1 
 * 2019-01-14 [ad33bf3](../../commit/ad33bf3) - __(Mikhail Nelaev)__ fix: яндекс может отдавать модели без категории 
 https://jira.railsc.ru/browse/GOODS-1610
 
