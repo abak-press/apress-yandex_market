@@ -1,6 +1,10 @@
+# v0.2.1
+
+* 2021-08-23 [00f2db2](../../commit/00f2db2) - __(TamarinEA)__ Release 0.2.1 
+* 2021-08-23 [1d18042](../../commit/1d18042) - __(TamarinEA)__ chore: test ruby 2.2-2.5 
+
 # v0.2.0
 
-* 2019-02-18 [eabf640](../../commit/eabf640) - __(Mikhail Nelaev)__ Release 0.2.0 
 * 2019-02-08 [0dd6b17](../../commit/0dd6b17) - __(Mikhail Nelaev)__ feature: загружаем только товары в наличии 
 https://jira.railsc.ru/browse/GOODS-1657
 
